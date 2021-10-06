@@ -1,0 +1,30 @@
+.ambassadors {
+    display: flex;
+    justify-content: center;
+
+    background-image: url("/img/concrete-wall.jpg");
+    color: var(--color-blue-dark);
+    font-size: 2rem;
+    line-height: 3rem;
+
+    
+
+    &__content {
+        max-width: 69rem;
+        margin: 11rem 1.5rem 5rem 1.5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            margin: 6rem 1.5rem 1rem 1.5rem;
+        }
+
+        & > h3 {
+            font-size: 2.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        & > p:not(last-child) {
+            margin-bottom: 5.5rem;
+        }
+
+    }
+}

@@ -1,0 +1,42 @@
+.rectangle {
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto 13rem auto;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 7rem auto 6rem auto;
+    }
+
+    &__content {
+        max-width: 95rem;
+        background-color: var(--color-blue-dark);
+        color: var(--color-white);
+        line-height: 3rem;
+        padding: 7rem 8.5rem 5rem 8.5rem;
+        border-radius: 3.5rem;
+
+        @media only screen and (max-width: $bp-medium-small) {
+            padding: 4rem 1.5rem 4rem 1.5rem;
+        }
+        
+        & > * {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__content ul li {
+        margin-left: 2rem;
+    }
+
+    &__content h4 {
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+   &__button {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 1rem;
+   }
+}

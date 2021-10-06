@@ -1,0 +1,154 @@
+.hero {
+    background-image: url(/img/Group7.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: var(--color-blue-dark);
+    display: flex;
+    justify-content: flex-end;
+
+
+    @media only screen and (max-width: $bp-desktop) {
+        background-image: url(/img/Group-lowres.jpg);
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+            background-image: url(/img/sky.jpg);
+            background-position: left center;
+            height: 90vh;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        // background-image: url(/img/sky4.jpg);
+        background-image: url(/img/sky.jpg);
+        // background-position: center bottom;
+        background-size: cover;
+        height: 100vh;
+}
+
+
+    &__container {
+        display: flex;
+        align-content: center;
+        justify-content: flex-end;
+        max-width: 144rem;
+        margin-right: 18%;
+
+        @media only screen and (max-width: $bp-desktop) {
+            margin-right: 14%;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-right: 0;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__text-box {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        max-width: 70rem;
+
+        @media only screen and (max-width: $bp-desktop-full) {
+            max-width: 55rem;
+        }
+
+        @media only screen and (max-width: $bp-desktop) {
+            max-width: 50rem;
+        }
+
+        @media only screen and (max-width: $bp-largest) {
+
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            max-width: 40rem;   
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            max-width: 30rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-small) {
+            max-width: 25rem;
+ 
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            max-width: 100vw;
+            padding: 1rem;
+            align-self: flex-end;
+
+   
+        }
+
+        
+    }
+
+    &__text-box span{
+        display: block;
+        font-family: 'Bungee', cursive;
+        line-height: .92;
+        font-size: 15rem;
+
+        @media only screen and (max-width: $bp-desktop-full) {
+            font-size: 12rem;
+        }
+        
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 8rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 6rem;
+            line-height: 0.8;
+        }
+
+    }
+
+    &__text-box span:last-of-type {
+        font-size: 25rem;
+
+        @media only screen and (max-width: $bp-desktop-full) {
+            font-size: 18rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 12rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 8rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 10rem;
+            line-height: 1;
+        }
+    }
+
+    &__text-box p {
+        font-size: 2.4rem;
+        font-weight: bold;
+        padding: 1rem;
+
+        @media only screen and (max-width: $bp-desktop-full) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 1.6rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.6rem;
+            padding: 0.5rem;
+        }
+    }
+
+
+}

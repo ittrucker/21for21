@@ -1,0 +1,18 @@
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+    --color-blue-dark:#195392;
+    --color-blue-light:#ACDAE9;
+    --color-grey-light:#EEEEEE;
+    --color-grey-dark:#CBCBCB;
+    --color-tomato: #E5524B;
+}
+
+$bp-desktop-full: 112.5em;      // 1800px
+$bp-desktop: 90em;     // 1440px
+$bp-largest: 75em;     // 1200px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 56.25em;   // 900px
+$bp-medium-small: 43.75em;   // 700px
+$bp-small: 37.5em;     // 600px
+$bp-smallest: 31.25em; // 500px

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem - 10px
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif ;
+    // background-color: var(--color--white);
+    // display: flex;
+    // flex-direction: column;
+}
+
+
+.row {
+    width: 75%;
+    // max-width: 144rem;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+// utilities
+
+
+
+.btn {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 3.4rem;
+    font-weight: bold;
+    background-color: var(--color-tomato);
+    padding: 1.05rem 5rem 1.05rem 5rem;
+    border-radius: 10rem;
+    border: 0;
+    
+    &__shadow--dark {
+        box-shadow: 0.5rem 1rem 0 var(--color-blue-dark);
+    }
+
+    &__shadow--light {
+        box-shadow: 0.5rem 1rem 0 var(--color-blue-light);
+    }
+
+    @media only screen and (max-width: $bp-desktop-full) {
+        font-size: 3rem;
+        padding: 1.1rem 5rem 1.1rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 1.8rem;
+        padding: 1rem 4.5rem 1rem 4.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 3rem;
+        padding: 1.1rem 5rem 1.1rem 5rem;
+    }
+}
+
+.text-box-shadow-dark {
+    box-shadow: 5rem 5rem 0 var(--color-blue-dark);
+
+    @media only screen and (max-width: $bp-large) {
+        box-shadow: 1.5rem 1.5rem 0 var(--color-blue-dark); 
+    }
+}
+
+.text-box-shadow-light {
+    box-shadow: 5rem 5rem 0 var(--color-blue-light);
+
+    @media only screen and (max-width: $bp-large) {
+        box-shadow: 1.5rem 1.5rem 0 var(--color-blue-light); 
+    }
+}
+
+// helpers
+
+.margin-bottom-small {
+    margin-bottom: 2.5rem;
+
+    @media only screen and (max-width: $bp-desktop) {
+        margin-bottom: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 1rem;
+    }
+}
+
+.margin-bottom-medium {
+    margin-bottom: 3.5rem;
+}
+
+.margin-bottom-big {
+    margin-bottom: 5.5rem;
+}
+
+.margin-top-medium {
+    margin-top: 4.5rem;
+}
+
+.text-box {
+    margin: 0 1.5rem 0 1.5rem;
+}
